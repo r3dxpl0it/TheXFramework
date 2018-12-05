@@ -33,7 +33,11 @@ Network/WebApplication Information Gathering, Enumeration and Vulnerability Scan
 - Bunch of Other Scrpits/Tools
 
 ### Installation 
-(Soon) 
+```
+> sudo chmod +x install.sh && ./install.sh
+```
+Note : This Framework has Beed Developed In Kali Linux For Kali Linux ALthough you might also try it on any DEBIAN distro. please note that it if you want to use it On Parrot OS / Ubuntu Make Sure Every Single Package Have been Installed Successfully
+
 
 ### Usage 
 
@@ -45,10 +49,6 @@ Network/WebApplication Information Gathering, Enumeration and Vulnerability Scan
     Required Options:
       -u URL, --url URL  root url
 
-    Options:
-      -v, --verbose      Verbose Mode
-      -b, --batch        batch Mode
-      -F, --fast         Run Very Fast Without Logging/Saving/History [Soon]
     Scans:
       --banner           Grab Target Banner
       --wafbanner        Agressive Banner Grabbing with Limited WAF detection
@@ -79,6 +79,10 @@ Network/WebApplication Information Gathering, Enumeration and Vulnerability Scan
       --photon           Run Crawler With Minimized Photon Engine
       --photonold        Run Crawler With Photon Engine
 
+
+### What Would Make TheXFramework Very Intresting (Soon)
+  1) We Aim to Add an Semi-Automation Process to TheXFramework In Very Near Future That would Also do Standard P.T. and V.A. For Targets 
+  2) Adding an Interprator That Aim to Log/History/Report Based on the The Commands and Output Function
 
 ### What Is Under Development and What is The Future ? 
 This Options Are Under Development But They will be added to Version 2 of TXF 
