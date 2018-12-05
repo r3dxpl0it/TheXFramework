@@ -1,5 +1,5 @@
 # TheXFramework
-Network/WebApplication Information Gathering, Enumeration and Vulnerability Scanning
+Network/WebApplication Information Gathering, Enumeration and Vulnerability Scanning Framework For Most Common Attacks Based On OWASP Methodology and P.T. Guide. 
 ## Xframework Dark 
 - Network Scanner  
   - Network Scanning For Open/Filter Ports 
@@ -82,6 +82,7 @@ Network/WebApplication Information Gathering, Enumeration and Vulnerability Scan
 
 ### What Is Under Development and What is The Future ? 
 This Options Are Under Development But They will be added to Version 2 of TXF 
+ - Enumeration and Port Vuln Scanner 
  - Auto Network Port Scanner
  - Auto web Application Scanner
  - Threading
