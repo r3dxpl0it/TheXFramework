@@ -14,7 +14,7 @@ certifi
 chardet
 idna
 requests
-urllib3==1.22
+urllib3
 wsgiref
 bs4
 termcolor
