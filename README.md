@@ -32,9 +32,12 @@ Network/WebApplication Information Gathering, Enumeration and Vulnerability Scan
 - Xsstrick
 - Bunch of Other Scrpits/Tools
 
-### Installation 
+### Installation
+
+One Line Installation and Use :
+
 ```
-> sudo git clone https://github.com/r3dxpl0it/TheXFramework TXF && cd TXF && chmod +x install.sh && ./install.sh
+sudo -i && git clone https://github.com/r3dxpl0it/TheXFramework TXF && cd TXF && sudo chmod +x install.sh && ./install.sh && ./xframework.py
 ```
 Note : This Framework has Beed Developed In Kali Linux For Kali Linux ALthough you might also try it on any DEBIAN distro. please note that it if you want to use it On Parrot OS / Ubuntu Make Sure Every Single Package Have been Installed Successfully
 
