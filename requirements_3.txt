@@ -14,8 +14,7 @@ certifi
 chardet
 idna
 requests
-urllib3==1.22
-bs4
+urllib3
 termcolor
 terminaltables
 nyawc
