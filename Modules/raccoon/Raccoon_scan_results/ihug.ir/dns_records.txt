@@ -1,0 +1,17 @@
+[1;32m[v][0;0m Writing DNS query results
+A
+
+	159.69.10.226
+MX
+
+	0 ihug.ir.
+NS
+
+	ns2.ssvco.net.
+	ns1.ssvco.net.
+SOA
+
+	kian1.mashhadhost.com. kian.mrservers.net. 2017080100 3600 7200 1209600 86400
+TXT
+
+	"v=spf1 +a +mx +ip4:159.69.10.226 ~all"
