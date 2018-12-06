@@ -15,7 +15,6 @@ chardet
 idna
 requests
 urllib3==1.22
-wsgiref
 bs4
 termcolor
 terminaltables
