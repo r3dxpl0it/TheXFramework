@@ -28,4 +28,4 @@ pip install -r requirements.txt
 echo "......................................................"
 echo "Installing Python3 Modules" 
 echo "......................................................"
-pip3 install -r requirements.txt
+pip3 install -r requirements_3.txt
