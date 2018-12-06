@@ -1,0 +1,56 @@
+Add;
+
+Version 1.x:
+    - https://github.com/droope/droopescan/issues/18
+    - lib/upgrade.txt for moodle. /lib/db/install.xml also discloses version in form of date that you can correlate
+    - Fix issue with fake 200. These get handled OK for module detection but it tricks IMU into thinking all files exist.
+        [head] https://example.org/wp-content/plugins/all-in-one-seo-pack/ None 200
+        [head] https://example.org/wp-content/plugins/wordpress-importer/ None 403
+        [head] https://example.org/wp-content/plugins/wordfence/ None 200
+        [head] https://example.org/wp-content/plugins/nextgen-gallery/ None 200
+        [...]
+        wordpress-importer https://example.org/wp-content/plugins/wordpress-importer/
+            https://example.org/wp-content/plugins/wordpress-importer/readme.html
+            https://example.org/wp-content/plugins/wordpress-importer/license.txt
+            https://example.org/wp-content/plugins/wordpress-importer/documentation.txt
+            https://example.org/wp-content/plugins/wordpress-importer/screenshot.png
+            https://example.org/wp-content/plugins/wordpress-importer/screenshot-1.png
+        [...]
+    - Some SS sites have started blocking all readme.md files. Results look suspect.
+        [+] Known silverstripe folders have returned 404 Not Found. If a module does not have a README.md file it will not be detected.
+        [head] http://example.org/sapphire/README.md None 403
+        [head] http://example.org/cms/README.md None 403
+        [head] http://example.org/sortablegridfield/README.md None 403
+        [head] http://example.org/sqlite3/README.md None 403
+        [head] http://example.org/gridfieldextensions/README.md None 403
+    - Add Common Web Platform (CWP) modules/CWP detection to SS.
+        CWP are made available by the NZ Government here
+            https://gitlab.cwp.govt.nz/explore/projects 
+    - Space after URL results in double slashes:
+        ./droopescan scan -u http://example.org/  -n 100 --debug-requests
+            [head] http://example.org// None 404
+            [get] http://example.org//wp-admin/wp-admin.css None 404
+            [get] http://example.org//wp-includes/js/tinymce/tiny_mce_popup.js None 404
+    - Double redirects, e.g. for http://example.org/ -> http://www.example.org -> https://www.example.org/ result in the following output:
+        root@host:~# droopescan scan -u example.org
+        [+] Accepted redirect to https://example.org/
+        [+] Site identified as drupal.
+        [+] Expected folder returned status '301', expected file returned not found status.
+        [+] It is possible that https://example.org/ is not running drupal. If you disagree, please specify a --method
+    - Interesting URLs does not follow redirects currently. A request for
+        wp-admin will not be detected if it results in a redirect to the HTTPs
+        site for example.
+
+Version 2.x:
+    UA:
+        - Move to using API instead of crawling the website for github calls https://api.github.com/repos/joomla/joomla-cms/git/refs/tags.
+    - Break API to remove finds, isempty. Instead, simply return finds.
+    - Break API to replace 'interesting urls' key with 'interesting_urls'.
+    - Break API to add url (the URL which was requested to be scanned) and final_url which is the URL after redirects.
+    - Break API to detect plugin version.
+    - Add detection of downloadable configuration file backup (e.g. configuration.php~)
+    - Add detection of exposed .git.
+
+Relevant:
+- https://wappalyzer.com/
+  http://www.opensourcecms.com/general/cms-marketshare.php

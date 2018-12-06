@@ -1,0 +1,8 @@
+mock
+nose
+responses==0.3.0
+lxml==3.6.0
+BeautifulSoup4
+coverage
+wheel
+retrying
