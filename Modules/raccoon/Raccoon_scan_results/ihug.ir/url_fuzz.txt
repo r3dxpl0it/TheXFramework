@@ -1,3 +1,0 @@
-[1;34m[#][0;0m Fuzzing URLs
-[1;34m[#][0;0m Reading from list: /root/Dev/Raccoon/raccoon_src/wordlists/fuzzlist
-	[1;31m[500][0;0m http://ihug.ir/cgi-sys/

@@ -1,3 +1,0 @@
-[1;34m[#][0;0m Trying to collect ihug.ir web application data
-[1;32m[v][0;0m Web server detected: [1;32mApache[0;0m
-[1;32m[v][0;0m X-Frame-Options header not detected - target might be vulnerable to clickjacking
