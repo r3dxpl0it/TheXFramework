@@ -20,7 +20,7 @@ sudo apt-get install python3-dev python3-pip libxslt1-dev libxml2-dev python3 zl
 echo "......................................................"
 echo "Installing Modules"
 echo "......................................................"
-sudo apt-get nmap golismero sql-map 
+sudo apt-get install nmap golismero sqlmap nikto 
 echo "......................................................"
 echo "Installing Python2 Modules" 
 echo "......................................................"
