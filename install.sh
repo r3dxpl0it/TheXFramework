@@ -15,7 +15,7 @@ echo "......................................................"
 echo "Installing Libraries"
 echo "......................................................"
 sudo apt-get install libxml2 libxslt libxml
-sudo apt-get install python python-dev python-all python-all-dev 
+sudo apt-get install python python-dev python-all python-all-dev python3 
 sudo apt-get install python3-dev python3-pip libxslt1-dev libxml2-dev python3 zlib1g-dev
 echo "......................................................"
 echo "Installing Modules"
