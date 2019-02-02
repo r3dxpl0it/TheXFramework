@@ -1,6 +1,6 @@
 # TheXFramework (THIS REPO IS UNDER OPEN-SOURCE DEVELOPMENT)
 Network/WebApplication Information Gathering, Enumeration and Vulnerability Scanning Framework For Most Common Attacks Based On OWASP Methodology and P.T. Guide. 
-## The XFramework Is a Light in Darkness 
+## The XFramework Is a Light in Darkness 2 
 - Network Scanner  
   - Network Scanning For Open/Filter Ports 
 - X-Attacker Core 
